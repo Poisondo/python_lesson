@@ -16,3 +16,4 @@ df['Deviation'] = df['Rate'].apply(lambda x: x - mean_rate)
 
 # Сохраняем результаты в файл CSV
 df.to_csv('out.csv', index_label='Currency')
+# test2
