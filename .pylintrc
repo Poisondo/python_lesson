@@ -1,5 +1,14 @@
 [MASTER]
-ignore=migrations
+ignore=create_test_data.py
+extension-pkg-whitelist=django
+init-hook='import os; os.environ.setdefault("DJANGO_SETTINGS_MODULE", "orm.settings")'
+ignore-patterns=manage.py
 
 [MESSAGES CONTROL]
-disable=missing-docstring, too-few-public-methods
+disable=missing-docstring, too-few-public-methods, invalid-name, C0301
+
+[BASIC]
+module-rgx=(([a-z_][a-z0-9_]*)|([0-9]+_([a-z0-9_]+)))$
+
+[TYPECHECK]
+ignored-modules=django.test

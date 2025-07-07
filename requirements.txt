@@ -6,12 +6,18 @@
 #
 asgiref==3.8.1
     # via django
+astroid==3.3.10
+    # via pylint
 asttokens==3.0.0
     # via stack-data
 colorama==0.4.6
-    # via ipython
+    # via
+    #   ipython
+    #   pylint
 decorator==5.2.1
     # via ipython
+dill==0.4.0
+    # via pylint
 django==5.2
     # via -r requirements.in
 executing==2.2.0
@@ -22,12 +28,18 @@ ipython==9.3.0
     # via -r requirements.in
 ipython-pygments-lexers==1.1.1
     # via ipython
+isort==6.0.1
+    # via pylint
 jedi==0.19.2
     # via ipython
 matplotlib-inline==0.1.7
     # via ipython
+mccabe==0.7.0
+    # via pylint
 parso==0.8.4
     # via jedi
+platformdirs==4.3.8
+    # via pylint
 prompt-toolkit==3.0.51
     # via ipython
 pure-eval==0.2.3
@@ -36,10 +48,21 @@ pygments==2.19.1
     # via
     #   ipython
     #   ipython-pygments-lexers
+pylint==3.3.7
+    # via
+    #   -r requirements.in
+    #   pylint-django
+    #   pylint-plugin-utils
+pylint-django==2.6.1
+    # via -r requirements.in
+pylint-plugin-utils==0.9.0
+    # via pylint-django
 sqlparse==0.5.3
     # via django
 stack-data==0.6.3
     # via ipython
+tomlkit==0.13.3
+    # via pylint
 traitlets==5.14.3
     # via
     #   ipython
