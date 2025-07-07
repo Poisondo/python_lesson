@@ -1,7 +1,8 @@
 import random
 from django.utils.text import gettext_lazy as _
-from people.models import Branch, Department, Employee
 from faker import Faker
+
+from people.models import Branch, Department, Employee
 
 fake = Faker('ru_RU')
 
