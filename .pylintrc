@@ -1,5 +1,5 @@
 [MASTER]
-ignore=create_test_data.py
+ignore=create_test_data.py, views.py
 extension-pkg-whitelist=django
 init-hook='import os; os.environ.setdefault("DJANGO_SETTINGS_MODULE", "orm.settings")'
 ignore-patterns=manage.py
